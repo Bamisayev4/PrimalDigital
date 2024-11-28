@@ -1,6 +1,6 @@
 import React from "react";
 import Whatwedocard from "./whatwedocard";
-import mes from "../assets/mes.png";
+import mes from "../assets/mes.png"; 
 import net from "../assets/net.png";
 import smartph from "../assets/smartphone.png";
 import doc from "../assets/doc.png";
