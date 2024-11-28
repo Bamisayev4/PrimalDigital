@@ -6,26 +6,7 @@ import { Navbar } from "./Navbar";
 import TypingAnimation from "../animations/Hero";
 
 export const Hero: React.FC = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const images = [
-    "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-PC-SMB-OneNote:VP4-1260x600",
-    "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/OneNote-in-Education?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1920&qlt=100&fit=constrain",
-  ];
-
-  if (!isClient) return null;
+ 
 
   return (
     <section className="flex items-center flex-col w-full h-screen overflow-hidden background-img px-4">
