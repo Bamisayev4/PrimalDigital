@@ -38,10 +38,10 @@ const TypingAnimation: React.FC = () => {
   }, [displayText, isDeleting, textIndex, speed]);
 
   return (
-    <h1 className="text-white text-4xl font-bold">
+    <p className="text-white text-2xl sm:text-4xl font-bold">
       {displayText}
       <span className="animate-blink">|</span> {/* Blinking cursor */}
-    </h1>
+    </p>
     
   );
 };
